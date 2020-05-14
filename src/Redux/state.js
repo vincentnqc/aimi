@@ -30,7 +30,7 @@ export default {
       id: 0,
       name: "Josh",
       instrument:
-        "saxophone",
+        "Saxophone",
       number: "512-420-6969",
       spot: "South Congress",
       image: josh,
@@ -40,7 +40,7 @@ export default {
       id: 1,
       name: "Raph",
       instrument:
-        "cello",
+        "Cello",
       number: "512-420-6969",
       spot: "South Congress",
       image: raph,
@@ -50,7 +50,7 @@ export default {
       id: 2,
       name: "Matt",
       instrument:
-        "percussion",
+        "Percussion",
       number: "512-420-6969",
       spot: "South Congress",
       image: matt,
@@ -60,7 +60,7 @@ export default {
       id: 3,
       name: "Kelly",
       instrument:
-        "bass",
+        "Bass",
       number: "512-420-6969",
       spot: "South Congress",
       image: kelly,
@@ -70,7 +70,7 @@ export default {
       id: 4,
       name: "Clyde",
       instrument:
-        "guitar",
+        "Guitar",
       number: "512-420-6969",
       spot: "South Congress",
       image: clyde,
@@ -80,7 +80,7 @@ export default {
       id: 5,
       name: "Savanna",
       instrument:
-        "voice",
+        "Voice",
       number: "512-420-6969",
       spot: "South Congress",
       image: savanna,
@@ -90,7 +90,7 @@ export default {
       id: 6,
       name: "Brian",
       instrument:
-        "trumpet",
+        "Trumpet",
       number: "512-420-6969",
       spot: "South Congress",
       image: brian,
@@ -100,7 +100,7 @@ export default {
       id: 7,
       name: "Emily",
       instrument:
-        "violin",
+        "Violin",
       number: "512-420-6969",
       spot: "South Congress",
       image: emily,
@@ -110,7 +110,7 @@ export default {
       id: 8,
       name: "Travis",
       instrument:
-        "piano",
+        "Piano",
       number: "512-420-6969",
       spot: "South Congress",
       image: travis,

@@ -8,7 +8,7 @@ import Addbusiness from "./Containers/Addbusiness";
 import Details from "./Containers/Details";
 import Blog from "./Components/Blog";
 import Teachers from "./Containers/Teachers";
-import Schedule from "./Components/Schedule"
+import Schedule from "./Components/Schedule";
 import Instruments from "./Containers/Instruments";
 import Lesson from "./Containers/Lesson";
 import New from "./Containers/New";
@@ -22,9 +22,20 @@ const ProtectedRoute = ({ component: Component, ...rest }) => {
   return (
     <Route
       {...rest}
-      render={props => {
+      render={(props) => {
+        console.log(
+          "ieieie",
+          Component,
+          props,
+          props.location.pathname == "/new"
+        );
         if (CheckAuth()) {
-          return <Component {...props} />;
+          // if (props.location.pathname=="/new" || props.location.pathname == "/New"){
+          //   console.log("PROPSWASTRUE")
+          //   return <Redirect to="/New" />;
+          // }
+          // else {return <Component {...props} />}
+          return <Component {...props} />; //';;
         } else {
           return <Redirect to="/login" />;
         }

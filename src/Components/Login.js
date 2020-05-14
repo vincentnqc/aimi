@@ -74,7 +74,6 @@ class Login extends Component {
             >
               Log Out
             </Button>
-            {/* </Link> */}
           </form>
         </Container>
       </div>

@@ -22,6 +22,7 @@ export default function FormPropsTextFields(props) {
       name: name,
       instrument: instrument,
     });
+    props.history.push("/instructors")
   };
 
   console.log(props, "props");
