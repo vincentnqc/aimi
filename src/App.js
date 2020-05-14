@@ -17,7 +17,7 @@ function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
-      <Header title="ATX Music Lessons" sections={sections} />
+      <Header title="Austin Independent Music Instructors" sections={sections} />
       <Router/>
       </BrowserRouter>
     </Provider>

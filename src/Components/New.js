@@ -6,7 +6,7 @@ import Button from "@material-ui/core/Button";
 const useStyles = makeStyles((theme) => ({
   root: {
     "& .MuiTextField-root": {
-      margin: theme.spacing(1),
+      margin: theme.spacing(5),
       width: "25ch",
     },
   },
@@ -17,7 +17,6 @@ export default function FormPropsTextFields(props) {
   const [name, setName] = useState("");
   const [instrument, setInstrument] = useState("");
   const handleSubmit = (name) => {
-    console.log(name, "heloos frund");
 
     props.addTeacher({
       name: name,
@@ -33,48 +32,31 @@ export default function FormPropsTextFields(props) {
           onChange={(e) => {
             setName(e.target.value);
           }}
-          id="standard"
           label="Name"
           value={name}
         />
-        <TextField id="standard" label="Instrument" value={instrument} />
         <TextField
-          id="standard-password-input"
-          label="Password"
-          type="password"
-          autoComplete="current-password"
-        />
-        <TextField
-          id="standard-read-only-input"
-          label="Read Only"
-          defaultValue="Hello World"
-          InputProps={{
-            readOnly: true,
+          onChange={(e) => {
+            setInstrument(e.target.value);
           }}
+          label="Instrument"
+          value={instrument}
         />
-        <TextField
-          id="standard-number"
-          label="Number"
-          type="number"
-          InputLabelProps={{
-            shrink: true,
-          }}
-        />
-        <TextField id="standard-search" label="Search field" type="search" />
-        <TextField
-          id="standard-helperText"
-          label="Helper text"
-          defaultValue="Default Value"
-          helperText="Some important text"
-        />
+        <TextField label="Email Address" />
+        <TextField label="Phone Number" />
+        <TextField label="!!!!" />
+        <TextField label="****" />
+        <TextField label="%%%%" />
+        {/* <Link to = "/Instructors"> */}
         <Button
           onClick={() => handleSubmit(name)}
           type="button"
           variant="contained"
           color="primary"
         >
-          Primary
+          Start Teaching
         </Button>
+        {/* </Link> */}
       </div>
     </form>
   );

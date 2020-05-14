@@ -38,13 +38,11 @@ const Router = () => {
     <Switch>
       <Route exact path="/" component={Blog} />
       <Route path="/login" component={Login} />
-      <Route path="/addbusiness" component={Addbusiness} />
-      <Route path="/details/:id" component={Details} />
       <Route path="/Instructors" component={Teachers} />
       <ProtectedRoute path="/Schedule" component={Schedule} />
       <Route path="/Instruments" component={Instruments} />
       <Route path="/Lesson/:Intruments" component={Lesson} />
-      <Route path="/New" component={New} />
+      <ProtectedRoute path="/New" component={New} />
     </Switch>
   );
 };
