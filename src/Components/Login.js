@@ -20,7 +20,7 @@ class Login extends Component {
     console.log("hit");
     document.cookie = "loggedIn=true;max-age=60*1000";
     this.props.history.push("/");
-    return <Redirect to="/" />;
+    
   };
 
   logOut = (e) => {

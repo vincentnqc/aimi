@@ -23,8 +23,6 @@ const ProtectedRoute = ({ component: Component, ...rest }) => {
     <Route
       {...rest}
       render={(props) => {
-        console.log(
-          "ieieie",
           Component,
           props,
           props.location.pathname == "/new"

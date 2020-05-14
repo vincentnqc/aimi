@@ -33,7 +33,7 @@ const sections = [
 
 const mainFeaturedPost = {
   description:
-    "Just group of Austin artists trying to make a buck...",
+    "Explore the world of music...",
   image: pic1,
 };
 
@@ -82,7 +82,7 @@ export default function Blog() {
             ))}
           </Grid>
           <Grid container spacing={5} className={classes.mainGrid}>
-            <Main title="About Us" posts={["kdkdkd"]} />
+            <Main title="About Us" posts={["Independent Music Instructors believe that music is an essential part of  life –  whether that means playing for your own pleasure or giving your children a lifetime of self-expression. We offer piano lessons, guitar lessons, cello lessons, vocal lessons, clarinet and saxophone lessons, and so much more! Our music school includes many activities outside of weekly music lessons and we welcome you no matter what your age, level, and goals."]} />
             <Sidebar
               title={sidebar.title}
               description={sidebar.description}
@@ -92,7 +92,7 @@ export default function Blog() {
           </Grid>
         </main>
       </Container>
-      <Footer title="AIMI" description="Something here to give your life purpose!" />
+      <Footer title="AIMI" description="We're here to teach you!" />
     </React.Fragment>
   );
 }
