@@ -25,7 +25,14 @@ export default function Lesson(props) {
   const classes = useStyles();
   console.log(props)
   let instruments = props.match.params.Intruments
-  let instructor = props.teachers.find(teacher => teacher.instrument==instruments)
+  console.log(instruments)
+  let instructor // = props.teachers.find(teacher => teacher.instrument.toLowerCase()==instruments)
+  props.teachers.forEach(teacher => {
+    if(teacher.instrument == instruments){
+      instructor = teacher
+    }
+    
+  })
   return (
     <div className="instructor">
       <Card className={classes.root}>

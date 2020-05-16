@@ -16,7 +16,6 @@ import raph from "../pics/raph.jpg"
 import travis from "../pics/travis.jpg"
 import clyde from "../pics/clyde.jpg"
 import kelly from "../pics/kelly.jpg"
-import vincent from "../pics/vincent.jpg"
 
 export default {
   user: {
@@ -122,55 +121,55 @@ export default {
 
     {
       id:0,
-      name: "piano",
+      name: "Piano",
       image: piano,
     },
 
     {
       id:1,
-      name: "saxophone",
+      name: "Saxophone",
       image: sax,
     },
 
     {
       id:2,
-      name: "voice",
+      name: "Voice",
       image: voice,
     },
 
     {
       id:3,
-      name: "trumpet",
+      name: "Trumpet",
       image: trumpet,
     },
 
     {
       id:4,
-      name: "bass",
+      name: "Bass",
       image: bass,
     },
 
     {
       id:5,
-      name: "percussion",
+      name: "Percussion",
       image: perc,
     },
 
     {
       id:6,
-      name: "guitar",
+      name: "Guitar",
       image: guitar,
     },
 
     {
       id:7,
-      name: "violin",
+      name: "Violin",
       image: violin,
     },
 
     {
       id:8,
-      name: "cello",
+      name: "Cello",
       image: cello,
     },
 
