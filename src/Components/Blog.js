@@ -25,11 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const sections = [
-  { title: 'Instructors', url: '/instructors' },
-  { title: 'Instruments', url: '/instruments' },
-  { title: 'Culture', url: '#' },
-];
+
 
 const mainFeaturedPost = {
   description:
@@ -67,9 +63,9 @@ const sidebar = {
   ],
 };
 
-export default function Blog() {
+export default function Blog(props) {
   const classes = useStyles();
-
+  console.log(props, "Thos Hone")
   return (
     <React.Fragment>
       <CssBaseline />
@@ -82,7 +78,7 @@ export default function Blog() {
             ))}
           </Grid>
           <Grid container spacing={5} className={classes.mainGrid}>
-            <Main title="About Us" posts={["Independent Music Instructors believe that music is an essential part of  life –  whether that means playing for your own pleasure or giving your children a lifetime of self-expression. We offer piano lessons, guitar lessons, cello lessons, vocal lessons, clarinet and saxophone lessons, and so much more! Our music school includes many activities outside of weekly music lessons and we welcome you no matter what your age, level, and goals."]} />
+            <Main title="About Us" posts={["As independent music instructors we believe that music is an essential part of  life –  whether that means playing for your own pleasure or giving your children a lifetime of self-expression. We offer piano lessons, guitar lessons, cello lessons, vocal lessons, clarinet and saxophone lessons, and so much more!"]} />
             <Sidebar
               title={sidebar.title}
               description={sidebar.description}

@@ -33,12 +33,11 @@ export default function MediaCard(props) {
        
       return (<Card className={classes.root}>
         <img width = "200px" src= {instructor.image}></img>
+        
 
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">

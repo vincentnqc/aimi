@@ -7,6 +7,7 @@ class Login extends Component {
   state = {
     username: "",
     password: "",
+    loggedIn: false,
   };
 
   handleTextChange = (e) => {
@@ -17,10 +18,17 @@ class Login extends Component {
 
   login = (e) => {
     e.preventDefault();
-    console.log("hit");
+    console.log("hit", this.props);
     document.cookie = "loggedIn=true;max-age=60*1000";
-    this.props.history.push("/");
-    
+    // this.props.history.push("/");
+    // if (this.props.location.pathname=="/new" || this.props.location.pathname == "/New"){
+    //   console.log("PROPSWASTRUE")
+    //   this.props.history.push("/New")
+    // }
+    // else {
+    //   return <Redirect to= "/" />
+    // }
+    this.setState ({loggedIn:true})
   };
 
   logOut = (e) => {
@@ -28,7 +36,9 @@ class Login extends Component {
   };
 
   render() {
+    console.log(this.state)
     return (
+    this.state.loggedIn ? <Redirect to= "/" /> :(
       <div className="App">
         <Container className="please">
           Please Log In Before Continuing
@@ -77,7 +87,7 @@ class Login extends Component {
           </form>
         </Container>
       </div>
-    );
+    ));
   }
 }
 

@@ -3,7 +3,6 @@ import { Switch, Route, Redirect } from "react-router";
 import cookie from "cookie";
 import Login from "./Containers/Login";
 import { Link } from "react-router-dom";
-import List from "./Containers/List";
 import Addbusiness from "./Containers/Addbusiness";
 import Details from "./Containers/Details";
 import Blog from "./Components/Blog";
@@ -23,18 +22,26 @@ const ProtectedRoute = ({ component: Component, ...rest }) => {
     <Route
       {...rest}
       render={(props) => {
-          Component,
-          props,
-          props.location.pathname == "/new"
-        );
+
+        
         if (CheckAuth()) {
-          // if (props.location.pathname=="/new" || props.location.pathname == "/New"){
+
+          // console.log(
+          //   "ieieie",
+          //   rest,
+          //   props,
+          //   rest.path == "/New"
+          // );
+
+          // if (rest.path=="/new" || rest.path == "/New"){
           //   console.log("PROPSWASTRUE")
-          //   return <Redirect to="/New" />;
+          //   props.history.push("/New")
           // }
+
           // else {return <Component {...props} />}
           return <Component {...props} />; //';;
         } else {
+          console.log("login false")
           return <Redirect to="/login" />;
         }
       }}

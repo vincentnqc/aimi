@@ -16,6 +16,7 @@ import raph from "../pics/raph.jpg"
 import travis from "../pics/travis.jpg"
 import clyde from "../pics/clyde.jpg"
 import kelly from "../pics/kelly.jpg"
+import vincent from "../pics/vincent.jpg"
 
 export default {
   user: {
